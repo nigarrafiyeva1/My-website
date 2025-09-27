@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal website demo by Nigar">
+  <meta name="author" content="Nigar Rəfiyeva">
+  <title>Contact Me — Nigar Rəfiyeva</title>
+  <link rel="icon" href="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Crect width='100%25' height='100%25' fill='%23ff66aa'/%3E%3Ctext x='50%25' y='50%25' font-size='18' dominant-baseline='middle' text-anchor='middle'%3E%F0%9F%98%8A%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <header>
+    <h1>Contact Me</h1>
+    <nav>
+      <a href="home.html">Home</a> 
+      <a href="education.html">Education</a> 
+      <a href="schedule.html">Weekly Schedule</a> 
+      <a href="contact.html">Contact Me</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Send me a message</h2>
+      <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="Name" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="Email" required><br><br>
+        <label>Gender:</label><br>
+        <input type="radio" id="g-f" name="Gender" value="Female"><label for="g-f">Female</label>
+        <input type="radio" id="g-m" name="Gender" value="Male"><label for="g-m">Male</label>
+        <input type="radio" id="g-o" name="Gender" value="Other"><label for="g-o">Other</label><br><br>
+        <label for="interest">Area of interest:</label><br>
+        <select id="interest" name="Interest">
+      <option>Cybersecurity</option>
+      <option>Data Analysis</option>
+      <option>Software Development</option>
+      <option>Data Science</option>
+      <option>Artificial Intelligence</option>
+      <option>Cloud Computing</option>
+      <option>Machine Learning</option>
+      <option>Networking</option>
+      <option>UI/UX Design</option>
+      <option>Database Management</option>
+
+        </select><br><br>
+
+        <label>Subscribe to newsletter:</label>
+        <input type="checkbox" id="subscribe" name="Subscribe" value="Yes"><label for="subscribe">Yes, please</label><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="Message" rows="6" cols="40" placeholder="Write your message here..."></textarea><br><br>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="home.html">Back to Home</a></p>
+  </footer>
+</body>
+</html>
