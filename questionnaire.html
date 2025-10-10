@@ -1,57 +1,51 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Quick questionnaire demo">
-  <meta name="author" content="Nigar Rəfiyeva">
- 
-  <title>Questionnaire — Nigar Rəfiyeva</title>
-  <link rel="icon" href="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Crect width='100%25' height='100%25' fill='%23ff66aa'/%3E%3Ctext x='50%25' y='50%25' font-size='18' dominant-baseline='middle' text-anchor='middle'%3E%F0%9F%98%8A%3C/text%3E%3C/svg%3E">
-</head>
-<body>
-  <header>
-    <h1>Questionnaire</h1>
-    <nav>
-      <a href="home.html">Home</a> |
-      <a href="education.html">Education</a> |
-      <a href="schedule.html">Weekly Schedule</a> |
-      <a href="contact.html">Contact Me</a>
-    </nav>
-  </header>
-
-  <main>
-    <article>
-      <h2>Short quiz about my website</h2>
-      <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
-        <p>1) Do you enjoy the website demo?</p>
-        <label><input type="radio" name="Enjoy" value="Yes"> Yes</label>
-        <label><input type="radio" name="Enjoy" value="No"> No</label>
-
-        <p>2) Which parts did you like? (checkboxes)</p>
-        <label><input type="checkbox" name="Like_Images" value="Images"> Images</label>
-        <label><input type="checkbox" name="Like_Tables" value="Tables"> Tables</label>
-        <label><input type="checkbox" name="Like_Forms" value="Forms"> Forms</label>
-
-        <p>3) Rate overall clarity (1-5)</p>
-        <select name="Rating">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option selected>4</option>
-          <option>5</option>
-        </select>
-
-        <p>4) Any extra comments?</p>
-        <textarea name="Comments" rows="4" cols="40"></textarea>
-
-        <p><button type="submit">Submit Questionnaire</button></p>
-      </form>
-    </article>
-  </main>
-
-  <footer>
-    <p>Thanks for trying the questionnaire!</p>
-  </footer>
-</body>
-</html>
+  <head> 
+    <link rel="stylesheet" href="style.css"> 
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Quick questionnaire demo">
+    <meta name="author" content="Nigar Rəfiyeva">
+    <title>Questionnaire — Nigar Rəfiyeva</title>
+  </head>
+  <body>
+    <header class="site-nav">
+      <div class="container" style="display:flex;align-items:center;justify-content:space-between;">
+        <div style="font-weight:700;color:var(--accent)">Nigar Rəfiyeva</div>
+        <nav>
+          <a href="index.html" class="nav-link">Home</a> 
+          <a href="education.html" class="nav-link">Education</a> 
+          <a href="schedule.html" class="nav-link active">Weekly Schedule</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="questionnaire.html" class="nav-link">Questionnaire</a>
+        </nav> 
+      </div>
+    </header> 
+    <main> 
+      <article> <h2>Short quiz about my website</h2> 
+        <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
+          <p>1) Do you enjoy the website demo?</p>
+          <label><input type="radio" name="Enjoy" value="Yes"> Yes</label>
+          <label><input type="radio" name="Enjoy" value="No"> No</label>
+          <p>2) Which parts did you like? (checkboxes)</p>
+          <label><input type="checkbox" name="Like_Images" value="Images"> Images</label>
+          <label><input type="checkbox" name="Like_Tables" value="Tables"> Tables</label>
+          <label><input type="checkbox" name="Like_Forms" value="Forms"> Forms</label> 
+          <p>3) Rate overall clarity (1-5)</p> 
+          <select name="Rating">
+            <option>1</option> 
+            <option>2</option> 
+            <option>3</option> 
+            <option selected>4</option>
+             <option>5</option>
+             </select> <p>4) Any extra comments?</p> <textarea name="Comments" rows="4" cols="40"></textarea> 
+             <p><button type="submit">Submit Questionnaire</button></p> 
+            </form> 
+          </article> 
+        </main> 
+        <footer> 
+          <p>Thanks for trying the questionnaire!</p> 
+          <p><a href="https://nigarrafiyeva1.github.io/My-website/">Back to Home</a></p>
+         </footer> 
+        </body> 
+        </html>

@@ -1,65 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Personal website demo by Nigar">
+  <meta name="description" content="Contact page of Nigar">
   <meta name="author" content="Nigar Rəfiyeva">
   <title>Contact Me — Nigar Rəfiyeva</title>
-  <link rel="icon" href="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Crect width='100%25' height='100%25' fill='%23ff66aa'/%3E%3Ctext x='50%25' y='50%25' font-size='18' dominant-baseline='middle' text-anchor='middle'%3E%F0%9F%98%8A%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    main {
+      background-color: #fff0f8; /* soft pink background for contact */
+      padding: 20px;
+      max-width: 700px;
+      margin: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+
+    form {
+      background-color: #ffe5f0; /* light accent for form */
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+
+    input, textarea, select {
+      border: 1px solid rgba(0,0,0,0.1);
+    }
+
+    button {
+      background-color: var(--accent);
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Contact Me</h1>
+<header class="site-nav">
+  <div class="container">
+    <div style="font-weight:700;color:var(--accent)">Nigar Rafiyeva</div>
     <nav>
-      <a href="index.html">Home</a> 
-      <a href="education.html">Education</a> 
-      <a href="schedule.html">Weekly Schedule</a> 
-      <a href="contact.html">Contact Me</a>
-      <a href="questionnaire.html">Questionnaire</a>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="education.html" class="nav-link">Education</a>
+      <a href="schedule.html" class="nav-link">Weekly Schedule</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+      <a href="questionnaire.html" class="nav-link">Questionnaire</a>
     </nav>
-  </header>
-  <main>
-    <section>
-      <h2>Send me a message</h2>
-      <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="Name" required><br><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="Email" required><br><br>
-        <label>Gender:</label><br>
-        <input type="radio" id="g-f" name="Gender" value="Female"><label for="g-f">Female</label>
-        <input type="radio" id="g-m" name="Gender" value="Male"><label for="g-m">Male</label>
-        <input type="radio" id="g-o" name="Gender" value="Other"><label for="g-o">Other</label><br><br>
-        <label for="interest">Area of interest:</label><br>
-        <select id="interest" name="Interest">
-      <option>Cybersecurity</option>
-      <option>Data Analysis</option>
-      <option>Software Development</option>
-      <option>Data Science</option>
-      <option>Artificial Intelligence</option>
-      <option>Cloud Computing</option>
-      <option>Machine Learning</option>
-      <option>Networking</option>
-      <option>UI/UX Design</option>
-      <option>Database Management</option>
-      <option>Systems Analysis</option>
+  </div>
+</header>
 
-        </select><br><br>
+<main>
+  <section>
+    <h2>Send me a message</h2>
+    <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="Name" required><br>
 
-        <label>Subscribe to newsletter:</label>
-        <input type="checkbox" id="subscribe" name="Subscribe" value="Yes"><label for="subscribe">Yes, please</label><br><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="Email" required><br>
 
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="Message" rows="6" cols="40" placeholder="Write your message here..."></textarea><br><br>
+  <label>Gender:</label><br>
+  <div class="form-inline">
+    <input type="radio" id="g-f" name="Gender" value="Female"><label for="g-f">Female</label>
+    <input type="radio" id="g-m" name="Gender" value="Male"><label for="g-m">Male</label>
+    <input type="radio" id="g-o" name="Gender" value="Other"><label for="g-o">Other</label>
+  </div><br>
 
-        <button type="submit">Send</button>
-      </form>
-    </section>
-  </main>
+  <label for="interest">Area of interest:</label><br>
+  <select id="interest" name="Interest">
+    <option>Cybersecurity</option>
+    <option>Data Analysis</option>
+    <option>Software Development</option>
+    <option>Data Science</option>
+    <option>Artificial Intelligence</option>
+    <option>Cloud Computing</option>
+    <option>Machine Learning</option>
+    <option>Networking</option>
+    <option>UI/UX Design</option>
+    <option>Database Management</option>
+    <option>Systems Analysis</option>
+  </select><br>
 
-  <footer>
-    <p><a href="/My-website/index.html">Back to Home</a></p>
-  </footer>
+  <label>Subscribe to newsletter:</label><br>
+  <div class="form-inline">
+    <input type="checkbox" id="subscribe" name="Subscribe" value="Yes"><label for="subscribe">Yes, please</label>
+  </div><br>
+
+  <label for="message">Message:</label><br>
+  <textarea id="message" name="Message" rows="6" placeholder="Write your message here..."></textarea><br>
+
+  <button type="submit">Send</button>
+</form>
+
+  </section>
+</main>
+
+<footer>
+  <p><a href="index.html">Back to Home</a></p>
+</footer>
 </body>
 </html>
+
